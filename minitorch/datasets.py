@@ -21,6 +21,7 @@ class Graph:
 
 
 def simple(N):
+    '''Simple generaion of n 2d points which is possible to separate by x = 0.5-eps'''
     X = make_pts(N)
     y = []
     for x_1, x_2 in X:
@@ -30,6 +31,8 @@ def simple(N):
 
 
 def diag(N):
+    '''Look like a simple, but it's generating of points whichis possible to separate
+    by y = -x+0.5-eps'''
     X = make_pts(N)
     y = []
     for x_1, x_2 in X:
@@ -39,6 +42,7 @@ def diag(N):
 
 
 def split(N):
+    '''Generate 2d points which is possible to separate by 2 linear lines'''
     X = make_pts(N)
     y = []
     for x_1, x_2 in X:
@@ -48,6 +52,7 @@ def split(N):
 
 
 def xor(N):
+    '''Generate 2d points which is possible to separate by sign((x1 - 0.5)*(x2-0.5))'''
     X = make_pts(N)
     y = []
     for x_1, x_2 in X:
@@ -57,6 +62,7 @@ def xor(N):
 
 
 def circle(N):
+    '''Generate a circle'''
     X = make_pts(N)
     y = []
     for x_1, x_2 in X:
@@ -67,7 +73,7 @@ def circle(N):
 
 
 def spiral(N):
-
+    '''Generate a spiral'''
     def x(t):
         return t * math.cos(t) / 20.0
 
