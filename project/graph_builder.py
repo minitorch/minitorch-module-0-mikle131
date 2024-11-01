@@ -1,5 +1,13 @@
 import networkx as nx
 from dataclasses import dataclass
+
+# Делаем так, чтобы миниторч вщ находился
+
+import sys
+import os
+
+sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 import minitorch
 
 if hasattr(minitorch, "Scalar"):

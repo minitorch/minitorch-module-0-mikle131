@@ -6,3 +6,11 @@
 * Docs: https://minitorch.github.io/
 
 * Overview: https://minitorch.github.io/module0/module0/
+
+<img src="images\1.png" width="50%">
+
+<img src="images\1.png" width="50%">
+
+<img src="images\1.png" width="50%">
+
+На всякий случай: Скрины для 5 задаче - в папке images
